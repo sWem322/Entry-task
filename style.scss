@@ -1,0 +1,213 @@
+html {
+    box-sizing: border-box;
+    background-color: #f8edeb;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+}
+
+.wireframe {
+    font-family: Arial, Helvetica, sans-serif;
+    &__container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__block {
+        padding: 0 0 40px;
+        border-bottom: 2px dashed #ffaf6a;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 25px 0 15px 0;
+        color: #ffaf6a;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider {
+        display: flex;
+        overflow: hidden;
+        width: 500px;
+       >.wireframe__element {
+           margin: 0 2em 0 2em;
+       }
+    }
+
+    &__element {
+        font-size: 0.8em;
+        width: 120px;
+        text-align: center;
+        border: 1px solid #000;
+        background-color: #fae1dd;
+        cursor: pointer;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px 0 10px;
+        height: 70px;
+        color: #575757;
+        width: 120px;
+    }
+
+    &__comment {
+        border-top: 1px #000 dashed;
+        padding: 5px;
+        color: #575757;
+        width: 120px;
+    }
+
+    &__number {
+        margin-top: 15px;
+        text-align: center;
+        color: #575757;
+    }
+	&__circle {
+        margin: 25px;
+	}
+	&__radius {
+        text-align: center;
+        padding: 45px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background-color: #fec5bb;
+        color: #575757;
+	}
+	&__class {
+		&_name {
+            text-align: center;
+            margin-top: 10px;
+            color: #ffa657;
+            >.wireframe__comment {
+                text-align: center;
+                margin-top: 10px;
+                color: #ffa657;
+                border: none;
+            }
+		}
+	}
+    &__number_element {
+        width: 10%;
+        text-align: center;
+        border-right: 1px solid #575757;
+    }
+    &__title_element {
+        width: 30%;
+        text-align: center;
+    }
+    &__type_element {
+        width: 30%;
+        text-align: center;
+    }
+    &__time_element {
+        width: 30%;
+        text-align: center;
+    }
+.completed {
+    border: 1px solid #575757;
+    color: #575757;
+    min-height: 300px;
+    .number_title {
+        height: 29px;
+        border-bottom: 1px solid #575757;
+        padding: 5px 0 5px 0;
+        
+    }
+    .number_text {
+        margin: 15px 0 15px;
+        >div {
+            margin: 0 0 10px 5px;
+            height: 60px;
+        }
+    }
+    .title_title {
+        border-bottom: 1px solid #575757;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+    }
+    .title_text {
+        margin: 15px 0 15px;
+        >div {
+            margin: 0 0 10px 5px;
+            height: 60px;
+        }
+    }
+    .type_title {
+        border-bottom: 1px solid #575757;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+    }
+    .type_text {
+        margin: 15px 0 15px;
+        >div {
+            margin: 0 0 10px 5px;
+            height: 60px;
+        }
+    }
+    .time_title {
+        border-bottom: 1px solid #575757;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+    }
+    .time_text {
+        margin: 15px 0 15px;
+    }
+}
+.title {
+	cursor: pointer;
+	animation: title 4s infinite;
+}
+@-webkit-keyframes title {
+	0% {
+        -webkit-transform: scale(1);
+	}
+	50% {
+        -webkit-transform: scale(1.2);
+	}
+	100% {
+        -webkit-transform: scale(1);
+	}
+}
+@keyframes title {
+	0% {
+        transform: scale(1);
+	}
+	50% {
+        transform: scale(1.2);
+	}
+	100% {
+        transform: scale(1);
+	}
+}
+.hidden {
+    display: none;
+}
+}
+.radius {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.prev-button, .next-button {
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    color: #fec89a;
+}
+.fas {
+}
+.fa-chevron-left {
+}
+.fa-chevron-right {
+}
