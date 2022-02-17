@@ -154,48 +154,48 @@ function sliderAdd() {
 
             if (radiusChildren[0].lastElementChild.classList.contains (`${typeGood}`)) {
             
-                recreationalNumber++
+                ++recreationalNumber
                 radiusChildren[0].firstElementChild.innerHTML = localStorage.getItem('number')[0];
                 
             }
             else if (radiusChildren[1].lastElementChild.classList.contains (`${typeGood}`)) {
                 
-                socialNumber++
+                ++socialNumber
                 radiusChildren[1].firstElementChild.innerHTML = localStorage.getItem('number')[2];
             }
             else if (radiusChildren[2].lastElementChild.classList.contains (`${typeGood}`)) {
                 
-                educationNumber++
+                ++educationNumber
                 radiusChildren[2].firstElementChild.innerHTML = localStorage.getItem('number')[4];
             }
             else if (radiusChildren[3].lastElementChild.classList.contains (`${typeGood}`)) {
                
-                musicNumber++
+                ++musicNumber
                 radiusChildren[3].firstElementChild.innerHTML = localStorage.getItem('number')[6];
             }
             else if (radiusChildren[4].lastElementChild.classList.contains (`${typeGood}`)) {
                
-                relaxationNumber++
+                ++relaxationNumber
                 radiusChildren[4].firstElementChild.innerHTML = localStorage.getItem('number')[8];
             }
             else if (radiusChildren[5].lastElementChild.classList.contains (`${typeGood}`)) {
                 
-                busyworkNumber++
+                ++busyworkNumber
                 radiusChildren[5].firstElementChild.innerHTML = localStorage.getItem('number')[10];
             }
             else if (radiusChildren[6].lastElementChild.classList.contains (`${typeGood}`)) {
                 
-                charityNumber++
+                ++charityNumber
                 radiusChildren[6].firstElementChild.innerHTML = localStorage.getItem('number')[12];
             }
             else if (radiusChildren[7].lastElementChild.classList.contains (`${typeGood}`)) {
                 
-                cookingNumber++
+                ++cookingNumber
                 radiusChildren[7].firstElementChild.innerHTML = localStorage.getItem('number')[14];
             }
             else if (radiusChildren[8].lastElementChild.classList.contains (`${typeGood}`)) {
                 
-                diyNumber++
+                ++diyNumber
                 radiusChildren[8].firstElementChild.innerHTML = localStorage.getItem('number')[16];
             }
             else {
