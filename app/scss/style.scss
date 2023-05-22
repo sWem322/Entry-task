@@ -134,6 +134,7 @@ body {
         border: 1px solid #575757;
         color: #575757;
         min-height: 300px;
+        text-align: center;
 
         .number_title {
             height: 29px;
@@ -189,6 +190,11 @@ body {
 
         .time_text {
             margin: 15px 0 15px;
+
+            >div {
+                margin: 0 0 10px 5px;
+                height: 60px;
+            }
         }
     }
 
@@ -244,9 +250,3 @@ body {
     align-items: center;
     color: #fec89a;
 }
-
-.fas {}
-
-.fa-chevron-left {}
-
-.fa-chevron-right {}

@@ -68,4 +68,4 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 
 exports.build = gulp.series(cleanDist, buildDist)
-exports.default = gulp.parallel(styles, script, browsersync, watching)
+exports.dev = gulp.parallel(styles, script, browsersync, watching)
